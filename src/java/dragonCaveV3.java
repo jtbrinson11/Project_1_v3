@@ -1,17 +1,20 @@
 import java.util.Scanner;
 
 public class dragonCaveV3 {
+    public void main(String[] args) {
+        playGame();
+    }
 
     private int choice, outcome;
 
-    public void displayStart()
+    private void displayStart()
     {
         System.out.println("\nYou are in place that is full of different dragons. \nThere is a fork in the path ahead that has two caves. \n" +
                 "Each cave has a dragon inside of it. \nOne has a friendly dragon inside that will share his treasure with you. \n" +
                 "The other has a hungry dragon that will eat you. \nWhich cave will you go into? \n");
     }
 
-    public void setChoice()
+    private void setChoice()
     {
         Scanner scan = new Scanner(System.in);
         System.out.println("Make your choice (1 or 2): ");
@@ -21,16 +24,18 @@ public class dragonCaveV3 {
 
     public int getChoice()
     {
+        setChoice();
         return choice;
     }
 
-    public void setOutcome()
+    private void setOutcome()
     {
         outcome = (Math.random() <= 0.5) ? 1 : 2;
     }
 
     public int getOutcome()
     {
+        setOutcome();
         return outcome;
     }
 
@@ -51,4 +56,12 @@ public class dragonCaveV3 {
                     "It moves off to the side, to share its treasure with you. \nThe End");
         }
     }
+
+    public void playGame()
+    {
+        displayStart();
+        computeOutcome();
+
+    }
+
 }
