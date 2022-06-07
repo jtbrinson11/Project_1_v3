@@ -16,22 +16,16 @@ class dragonCaveV3Test {
 
     @Test
     void setChoice() {
+        dc3.choice = 1;
     }
 
     @Test
     void getChoice() {
+        assertEquals(1, dc3.getChoice(), "getChoice() failed");
     }
 
     @Test
-    void setOutcome() {
-    }
-
-    @Test
-    void getOutcome() {
-    }
-
-    @Test
-    void computeOutcome() {
+    void processOutcome() {
     }
 
     @AfterEach

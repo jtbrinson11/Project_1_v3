@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6887d38f-e789-45a6-b76e-8e1dee16e553" name="Changes" comment="Adjusted functions for program">
-      <change afterPath="$PROJECT_DIR$/src/test/dragonCaveV3Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1_v3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1_v3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/dragonCaveV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dragonCaveV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/dragonCaveV3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/dragonCaveV3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +55,18 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.dragonCaveV3Test">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dragonCaveV3" />
+      <module name="Project_1_v3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dragonCaveV3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project_1_v3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="dragonCaveV3Test" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,9 +82,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dragonCaveV3Test.getOutcome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_1_v3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="dragonCaveV3Test" />
+      <option name="METHOD_NAME" value="getOutcome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dragonCaveV3Test.setChoice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_1_v3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="dragonCaveV3Test" />
+      <option name="METHOD_NAME" value="setChoice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dragonCaveV3Test.setOutcome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_1_v3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="dragonCaveV3Test" />
+      <option name="METHOD_NAME" value="setOutcome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.dragonCaveV3Test.setChoice" />
+      <item itemvalue="JUnit.dragonCaveV3Test.getOutcome" />
+      <item itemvalue="JUnit.dragonCaveV3Test.setOutcome" />
+      <item itemvalue="JUnit.dragonCaveV3Test" />
+      <item itemvalue="JUnit.dragonCaveV3Test.displayStart" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.dragonCaveV3Test" />
+        <item itemvalue="JUnit.dragonCaveV3Test.setChoice" />
+        <item itemvalue="JUnit.dragonCaveV3Test.getOutcome" />
+        <item itemvalue="JUnit.dragonCaveV3Test.setOutcome" />
         <item itemvalue="JUnit.dragonCaveV3Test.displayStart" />
       </list>
     </recent_temporary>
@@ -112,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654546519064</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adjusted functions for program">
+      <created>1654622575662</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654622575662</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,47 +1,47 @@
 import java.util.Scanner;
 
 public class dragonCaveV3 {
-    public void main(String[] args) {
-        playGame();
+    protected static int choice, outcome;
+
+    public dragonCaveV3()
+    {
+        this.choice = choice;
+        this.outcome = outcome;
     }
 
-    private int choice, outcome;
-
-    private void displayStart()
+    private static void displayStart()
     {
         System.out.println("\nYou are in place that is full of different dragons. \nThere is a fork in the path ahead that has two caves. \n" +
                 "Each cave has a dragon inside of it. \nOne has a friendly dragon inside that will share his treasure with you. \n" +
                 "The other has a hungry dragon that will eat you. \nWhich cave will you go into? \n");
     }
 
-    private void setChoice()
+    private static void setChoice()
     {
         Scanner scan = new Scanner(System.in);
         System.out.println("Make your choice (1 or 2): ");
         String input = scan.next();
-        choice = Integer.parseInt(input);
+        try {
+            choice = Integer.parseInt(input);
+        }
+        catch (Exception e)
+        {
+            choice = 1;
+            System.out.println("Oops, invalid input. Setting to default 1 . . .\n");
+        }
     }
 
-    public int getChoice()
+    public static int getChoice()
     {
         setChoice();
         return choice;
     }
 
-    private void setOutcome()
+    public static void processOutcome()
     {
         outcome = (Math.random() <= 0.5) ? 1 : 2;
-    }
 
-    public int getOutcome()
-    {
-        setOutcome();
-        return outcome;
-    }
-
-    public void computeOutcome()
-    {
-        if(getOutcome() == getChoice())
+        if(outcome == getChoice())
         {
             System.out.println("You approach the cave and carefully step in . . . \n" +
                     "It's dark, cold, and moist . . . \n" +
@@ -57,11 +57,15 @@ public class dragonCaveV3 {
         }
     }
 
-    public void playGame()
+    public static void playGame()
     {
         displayStart();
-        computeOutcome();
+        processOutcome();
+    }
 
+    public static void main(String[] args) {
+
+        playGame();
     }
 
 }
