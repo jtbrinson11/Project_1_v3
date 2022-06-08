@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6887d38f-e789-45a6-b76e-8e1dee16e553" name="Changes" comment="Adjusted functions for program again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/dragonCaveV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dragonCaveV3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/dragonCaveV3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/dragonCaveV3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.dragonCaveV3Test">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dragonCaveV3" />
       <module name="Project_1_v3" />
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654634931796</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adjusted functions for program again">
+      <created>1654635695245</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654635695245</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

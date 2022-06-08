@@ -3,12 +3,6 @@ import java.util.Scanner;
 public class dragonCaveV3 {
     protected static int choice, outcome;
 
-    public dragonCaveV3()
-    {
-        this.choice = choice;
-        this.outcome = outcome;
-    }
-
     private static void displayStart()
     {
         System.out.println("\nYou are in place that is full of different dragons. \nThere is a fork in the path ahead that has two caves. \n" +
@@ -16,24 +10,13 @@ public class dragonCaveV3 {
                 "The other has a hungry dragon that will eat you. \nWhich cave will you go into? \n");
     }
 
-    private static void setChoice()
+    public static void setChoice(int input)
     {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Make your choice (1 or 2): ");
-        String input = scan.next();
-        try {
-            choice = Integer.parseInt(input);
-        }
-        catch (Exception e)
-        {
-            choice = 1;
-            System.out.println("Oops, invalid input. Setting to default 1 . . .\n");
-        }
+        choice = input;
     }
 
     public static int getChoice()
     {
-        setChoice();
         return choice;
     }
 
@@ -60,6 +43,19 @@ public class dragonCaveV3 {
     public static void playGame()
     {
         displayStart();
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Make your choice (1 or 2): ");
+        String input = scan.next();
+        try {
+            choice = Integer.parseInt(input);
+        }
+        catch (Exception e)
+        {
+            choice = 1;
+            System.out.println("Oops, invalid input. Setting to default 1 . . .\n");
+        }
+        setChoice(choice);
         processOutcome();
     }
 

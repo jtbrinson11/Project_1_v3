@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class dragonCaveV3Test {
@@ -15,16 +14,15 @@ class dragonCaveV3Test {
 
     @Test
     void setChoice() {
-        dc3.choice = 1;
+        dc3.setChoice(1);
+        assertEquals(1, dc3.choice, "setChoice() failed");
     }
 
     @Test
     void getChoice() {
-        assertEquals(1, dc3.getChoice(), "getChoice() failed");
-    }
-
-    @Test
-    void processOutcome() {
+        dc3.setChoice(2);
+        int testChoice = dc3.getChoice();
+        assertEquals(2, testChoice, "getChoice() failed");
     }
 
     @AfterEach
